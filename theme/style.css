@@ -19,6 +19,10 @@ h1, h2 {
 	margin-bottom: 50px;
 }
 
+h2 {
+	text-align: left;
+}
+
 dt, dd {
 	display: inline-block;
 }
