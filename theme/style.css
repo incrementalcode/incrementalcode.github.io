@@ -1,0 +1,24 @@
+html {
+	text-align: center;
+}
+
+body {
+	font-family: Monospace;
+	font-weight: normal;
+
+	display: inline-block;
+	text-align: left;
+}
+
+h1, h2 {
+	font-weight: normal;
+	font-size: large;
+	text-align: center;
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+dt, dd {
+	display: inline-block;
+}
