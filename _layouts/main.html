@@ -17,10 +17,12 @@
 		<dl><dt>Twitter</dt><dd><a href="http://twitter.com/incrementalcode">@incrementalcode</a></dd></dl>
 		<dl><dt>Location</dt><dd>CodeBridge, Claremont, Cape Town</dd></dl>
 
-		<h2>Recent articles</h2>
+		{% if site.posts > 0 %}
+			<h2>Recent articles</h2>
 
-		{% for post in site.posts | group_by: "category" %}
-			<div> #{{ post.category }}  <a href="{{ post.url }}">{{ post.title }}</a> <div>
-		{% endfor %}
+			{% for post in site.posts | group_by: "category" %}
+				<div> #{{ post.category }}  <a href="{{ post.url }}">{{ post.title }}</a> <div>
+			{% endfor %}
+		{% endif %}
 	</body>
 </html>
