@@ -1,0 +1,14 @@
+@font-face {
+	font-family: NexaRegular;
+	src: url("/fonts/NexaRegular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: NexaHeavy;
+	src: url("/fonts/NexaHeavy.otf") format("opentype");
+}
+
+@font-face {
+	font-family: NexaBold;
+	src: url("/fonts/NexaBold.otf") format("opentype");
+}

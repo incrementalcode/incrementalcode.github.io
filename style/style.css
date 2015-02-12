@@ -1,0 +1,176 @@
+@import '/style/reset.css';
+@import '/style/nexa.css';
+
+html, body {
+	margin: 0;
+
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.content {
+	-webkit-flex-grow: 4;
+	flex-grow: 4;
+}
+
+body > footer {
+	-webkit-flex-grow: 4;
+	flex-grow: 1;
+}
+
+body > header {
+	display: -webkit-flex;
+	display: flex;
+	max-width: 100%;
+	padding: 30px;
+}
+
+body > header .nav {
+	align-self: center;
+	-webkit-align-self: center;
+	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+}
+
+body > header .nav a {
+}
+
+@media (max-width: 650px) {
+	body > header {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		padding: 5%;
+		margin-bottom: 50px;
+	}
+
+	body > header .nav {
+		margin-top: 20px;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-self: flex-end;
+	}
+
+	body .article-title {
+		font-size: 170%;
+	}
+}
+
+
+body > header a {
+	color: white;
+	font: 600 13px "Helvetica Neue"; /* "NexaRegular"; */
+	text-transform: uppercase;
+	padding: 10px 15px 10px 15px;
+}
+
+body > header a:active, body > header a:hover, a.hover {
+	background: rgb(22, 65, 90);
+	border-radius: 3px;
+	border-top: 1px solid rgb(32, 75, 100)
+}
+
+body > header {
+	font: "NexaHeavy"; color: #004c66; /* background heading text color and font */
+}
+
+.logo {
+	flex-grow: 4;
+	-webkit-flex-grow: 4;
+	max-width: 100%;
+}
+
+.logo .logo-icon {
+	max-width: 100%;
+}
+
+.logo h1 {
+	display: none;
+	font: 23pt Nexa; color: white;
+	text-transform: uppercase;
+}
+
+.logo > * {
+	align-self: center;
+	-webkit-align-self: center;
+}
+
+.article-background {
+	float: left
+}
+
+input {
+	padding: 5px;
+}
+
+h1 {
+	font: 600 60px "Avenir Next";
+}
+
+.lab-illustration {
+	background: url('/img/lab-illustration.png') no-repeat 20px 90px, #0d1d28;
+}
+
+.content {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.article {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	width: 100%;
+}
+
+.article header {
+	text-align: right;
+
+	padding: 0 50px 20px;
+
+	flex-grow: 2;
+	-webkit-flex-grow: 2;
+}
+
+.article-title {
+	color: white;
+	font-family: "Avenir Next";
+	font-weight: 700;
+	font-size: 50px;
+}
+
+.article-subtitle {
+	color: gray;
+	font-family: proxima-nova, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+.article-body {
+	background: white;
+
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+}
+
+
+a.button, .read-more {
+	font-family: "NexaRegular";
+	font-size: 20px;
+	color: white;
+	background-color: #00526d;
+	padding: 15px;
+	border-radius: 3px;
+	background: linear-gradient(40deg, rgb(5, 96, 125) 50%,  rgb(6, 110, 145) 50%);
+}
+
+body > footer {
+	background-color: white; /* #00394e; #09607f; darker: #00394e; darkerer: #122838; middle: #004c66; lighter: #066e91; */
+	font-family: proxima-nova, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* CTA / heading */
+	font-size: 28px;
+	font-weight: 200;
+	line-height: 60px;
+	padding: 50px 20px;
+}

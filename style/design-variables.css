@@ -1,0 +1,74 @@
+.background-illustration {
+	background:
+		url('/img/lab-illustration.png') no-repeat 5% 5%,
+		url('/img/lair-illustration.png') no-repeat 95% 95%;
+	background-size: 50%;
+}
+
+.darker-background {
+	background-color: #0d1d28; /* dark on the top */
+}
+
+.lighter-background {
+	background-color: #072a3a; /* lighter on the bottom diagonal */
+}
+
+.content-background {
+	background-color: #eeeeee;
+}
+
+.highlighted-background, a:active {
+	background-color: #00526d;
+}
+
+body > header a {
+	color: white;
+	font: 600 13px "Helvetica Neue"; /* "NexaRegular"; */
+	text-transform: uppercase;
+	padding: 10px 15px 10px 15px;
+}
+
+body > header a:active, body > header a:hover, a.hover {
+	background: rgb(22, 65, 90);
+	border-radius: 3px;
+	border-top: 1px solid rgb(32, 75, 100)
+}
+
+body > header {
+	font: "NexaHeavy"; color: #004c66; /* background heading text color and font */
+}
+
+.main-title {
+	/* for the category title */
+	font-family: "NexaHeavy"; color: #066e91;
+}
+
+.article-title {
+	/* article titles */
+	font-family: "NexaBold";
+	color: #00526d;
+}
+
+article, section {
+	font-family: "NexaRegular";
+	color: white;
+	font-size: medium;
+}
+
+a.button, .read-more {
+	font-family: "NexaRegular";
+	text-transform: capitalize;
+	color: white;
+	background-color: #00526d;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+body > footer {
+	/* border-top: 1px solid silver; /* #122838; */
+	background-color: white; /* #00394e; #09607f; darker: #00394e; darkerer: #122838; middle: #004c66; lighter: #066e91; */
+	font-family: proxima-nova, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* CTA / heading */
+	font-size: 28px;
+	font-weight: 200;
+	padding: 50px 20px;
+}

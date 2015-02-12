@@ -1,0 +1,28 @@
+html {
+	font-family:	proxima-nova, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.logo img {
+	max-height: 100px;
+}
+
+.logo h1 {
+	display: none;
+}
+
+.nav {
+	font-weight: 300;
+	font-size: 22px;
+	text-align: right;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #066e91;
+	margin-right: 30px;
+}
+
+h1 {
+	font-family: "Avenir Next", "Helvetica Neue";
+	font-size: 50px;
+}
