@@ -27,6 +27,10 @@ body > header {
 	padding: 30px;
 }
 
+.nav {
+	display: none;
+}
+
 body > header .nav {
 	align-self: center;
 	-webkit-align-self: center;
