@@ -146,10 +146,12 @@ h1 {
 }
 
 .article-subtitle {
-	color: gray;
+	color: #ceda48;
 	font-family: proxima-nova, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 300;
-	font-size: 24px;
+	font-weight: normal;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .article-body {
@@ -177,4 +179,5 @@ body > footer {
 	font-weight: 200;
 	line-height: 60px;
 	padding: 50px 20px;
+	text-align: center;
 }
