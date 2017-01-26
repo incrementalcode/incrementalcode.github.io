@@ -25,10 +25,11 @@ body > header {
 	display: flex;
 	max-width: 100%;
 	padding: 30px;
+	border-bottom: 1px solid rgb(18, 40, 56);
 }
 
 .nav {
-	display: none;
+	color: gray;
 }
 
 body > header .nav {
@@ -62,8 +63,8 @@ body > header .nav a {
 }
 
 
-body > header a {
-	color: white;
+body > header .word {
+	color: silver;
 	font: 600 13px "Helvetica Neue"; /* "NexaRegular"; */
 	text-transform: uppercase;
 	padding: 10px 15px 10px 15px;
@@ -127,12 +128,13 @@ h1 {
 	flex-direction: column;
 	-webkit-flex-direction: column;
 	width: 100%;
+	align-items: center; /* centers article body element maxd width */
 }
 
 .article header {
 	text-align: right;
 
-	padding: 0 50px 20px;
+	padding: 20px 50px 20px;
 
 	flex-grow: 2;
 	-webkit-flex-grow: 2;
@@ -140,18 +142,24 @@ h1 {
 
 .article-title {
 	color: white;
-	font-family: "Avenir Next";
-	font-weight: 700;
-	font-size: 50px;
+    font-family: "Avenir Next";
+    font-weight: 700;
+    font-size: 41px;
+    margin: 10px 0;
+    text-align: right;
 }
 
 .article-subtitle {
-	color: #ceda48;
-	font-family: proxima-nova, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	font-size: 18px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+	color: #cbcbcb;
+    background: rgba(0, 111, 147, 0.44);
+    display: inline;
+    line-height: 2em;
+    padding: 9px;
+    font-family: proxima-nova, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .article-body {
@@ -159,8 +167,32 @@ h1 {
 
 	flex-grow: 1;
 	-webkit-flex-grow: 1;
+
+	padding: 15px;
+	margin: 15px;
+
+	border-radius: 2px;	
+
+	max-width: 800px;
+
+	justify-content: space-between;
+    display: flex;
+    flex-direction: column;}	
 }
 
+.article-body  h3 {
+	margin: 18px 0;
+	text-transform: uppercase;
+	font-family: nexaregular;
+	color: silver;
+}
+
+.article-body p {
+	font-family: "Helvetica Neue";
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #333;
+}
 
 a.button, .read-more {
 	font-family: "NexaRegular";
@@ -168,16 +200,24 @@ a.button, .read-more {
 	color: white;
 	background-color: #00526d;
 	padding: 15px;
+	margin: 25px 0 0 0;
+	display: inline-block;
 	border-radius: 3px;
 	background: linear-gradient(40deg, rgb(5, 96, 125) 50%,  rgb(6, 110, 145) 50%);
 }
 
 body > footer {
-	background-color: white; /* #00394e; #09607f; darker: #00394e; darkerer: #122838; middle: #004c66; lighter: #066e91; */
+	--background-color: #122838; /* #00394e; #09607f; darker: #00394e; darkerer: #122838; middle: #004c66; lighter: #066e91; */
 	font-family: proxima-nova, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* CTA / heading */
-	font-size: 28px;
-	font-weight: 200;
-	line-height: 60px;
-	padding: 50px 20px;
 	text-align: center;
+	border-top: 1px solid #122838;
+	flex-grow: 0;
+}
+
+body > footer .copyright {
+	font-size: 11px;
+	color: #555;
+	min-height: 60px;
+	line-height: 60px;
+	font-weight: bold;
 }
