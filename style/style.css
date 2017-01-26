@@ -177,8 +177,9 @@ h1 {
 
 	justify-content: space-between;
     display: flex;
-    flex-direction: column;}	
+    flex-direction: column;
 }
+
 
 .article-body  h3 {
 	margin: 18px 0;
