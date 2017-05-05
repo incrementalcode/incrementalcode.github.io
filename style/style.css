@@ -239,6 +239,10 @@ h1 {
 	margin: 25px;
 }
 
+.contact-section .button {
+	margin: 10px;
+}
+
 a.button, .read-more {
 	font-family: "NexaRegular";
 	font-size: 20px;
